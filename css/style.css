@@ -1,0 +1,867 @@
+/* ------------------------------------ Reseteamos los valores por Default del Navegador ----------------------------- */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.letraTitulo3REM {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.letraTitulo2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.letraSubTitulo2REM {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.letraTexto1 {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Verdana;
+}
+
+.letraTexto2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: Verdana;
+}
+
+.letraTitulo1 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Verdana;
+}
+
+.letralogo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+/* ------------------------------------ Aplicamos Variables ----------------------------- */
+.boton, .botonContactos, .botonPagesH, .botonPages, .botonHome {
+  background-color: whitesmoke;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.boton:hover, .botonContactos:hover, .botonPagesH:hover, .botonPages:hover, .botonHome:hover {
+  background-color: orange;
+  transition: all 0.2s;
+}
+
+.botonHome {
+  width: 100px;
+  padding: 5px 10px;
+  text-align: center;
+  border: solid 2px #203239;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonHome:hover {
+  background-color: orange;
+  color: black;
+  transition: all 0.2s;
+}
+
+.botonPages {
+  width: 110px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonPages:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonPagesH {
+  width: 110px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: orangered;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonPagesH:hover {
+  background-color: rgba(255, 68, 0, 0.879);
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonContactos {
+  width: 110px;
+  padding: 6px 10px;
+  margin: 5px 5px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonContactos:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.modal-content {
+  background-color: orange;
+  color: whitesmoke;
+}
+
+.btn-close {
+  background-color: whitesmoke;
+  background-image: url(../../assets/icon/Close.png);
+  size: 20px;
+}
+
+.carousel-next-icon {
+  color: whitesmoke;
+}
+
+.carousel-prev-icon {
+  color: whitesmoke;
+}
+
+.botonInstagram :hover {
+  color: orangered;
+  transition: 0.8ms;
+}
+
+.botonFacebook :hover {
+  color: rgba(50, 79, 240, 0.644);
+  transition: 0.8ms;
+}
+
+.botonTwitter :hover {
+  color: lightblue;
+  transition: 0.8ms;
+}
+
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+header {
+  background: whitesmoke;
+  color: #203239;
+}
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+  margin-left: 5px;
+}
+
+.button-responsive {
+  display: none;
+}
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+/* -------------------------------------------- Buscador y Cart--------------------------------------------------------------*/
+.buscador {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.buscador-1 {
+  width: 55vw;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: black 3px solid;
+  margin-left: 240px;
+  text-align: center;
+}
+.buscador-2 {
+  width: 50px;
+  height: 40px;
+  padding: 2px;
+  margin-bottom: 4px;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  border: black 3px solid;
+  border-radius: 5px;
+}
+.buscador-2 :hover {
+  background-color: orange;
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.buscador-img img {
+  border-radius: 10px;
+  width: 40px;
+  margin: 0px 4px 4px 4px;
+}
+
+/* &-icon{
+  img {
+      width: 50px;
+      height: 40px;
+      padding: 2px;
+      margin-bottom: 4px;
+      color: $clr-ceniza;
+      background-color:  $clr-ceniza;
+      border:  $clr-negro 3px solid;
+      border-radius: 5px;
+     }
+  & :hover {
+      background-color: $clr-naranja;
+      transform: scale(1.05);
+      transition: all .3s;   
+     } 
+} */
+/* &-img img {
+     border-radius: 10px;
+     width: 40px;
+     margin: 0px 4px 4px 4px;
+
+   }    
+
+ }
+*/
+/* input .buscador-icon-input {
+  img {
+    width: 50px;
+    height: 40px;
+    padding: 2px;
+    margin-bottom: 4px;
+    color: $clr-ceniza;
+    background-color:  $clr-ceniza;
+    border:  $clr-negro 3px solid;
+    border-radius: 5px;
+   }
+  & :hover {
+      background-color: $clr-naranja;
+      transform: scale(1.05);
+      transition: all .3s;   
+   } 
+}
+&-img img {
+border-radius: 10px;
+width: 40px;
+margin: 0px 4px 4px 4px; */
+.myCart {
+  padding-top: 2px;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.myCart_img {
+  color: black;
+  width: 40px;
+}
+.myCart_number {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+}
+
+/* -------------------------------------------- Fin Buscador ----------------------------------------------------------*/
+/* -------------------------------------------- Navbar ----------------------------------------------------------------*/
+.navbar {
+  /* padding de la Nav Serch */
+  --bs-navbar-padding-x: 5px;
+  --bs-navbar-padding-y: 0rem;
+  /* Color de Font Nav */
+  --bs-navbar-color: #203239;
+  /* Hover nav color */
+  --bs-navbar-hover-color: whitesmoke;
+  /* Boton Home  */
+  --bs-navbar-active-color: whitesmoke;
+  /* Subtit Categoria */
+  --bs-navbar-brand-font-size: 1.5rem;
+  --bs-navbar-brand-color: whitesmoke;
+  --bs-navbar-brand-hover-color: whitesmoke;
+  --bs-navbar-nav-link-padding-x: 1rem;
+  /* Toggler */
+  --bs-navbar-toggler-padding-y: 0.60rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 0.7rem;
+  --bs-navbar-toggler-border-color: whitesmoke;
+  --bs-navbar-toggler-border-radius: 0.4rem;
+  --bs-navbar-toggler-focus-width: 0.1rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+}
+
+.nav-item :hover {
+  background: orange;
+  font-weight: 400;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  border: solid 2px;
+  font-size: 1.15rem;
+}
+.navbar-toggler-icon {
+  background-image: url(../../assets/icon/descarga.svg);
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.05rem;
+}
+
+/* ---------------------------------------- Fin Navbar ----------------------------------------------------------------*/
+/* ------------------------------------------------ Main Index ------------------------------------------------------------- */
+.card__main {
+  background-color: blueviolet;
+  border: black solid 3px;
+  background-color: #203239;
+}
+
+.card__container {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__container > h2 {
+  margin-top: 20px;
+}
+.card__container__titulo {
+  padding: 5px;
+}
+.card__container__texto {
+  padding: 5px;
+  text-align: center;
+}
+.card__container__gallery {
+  border: solid whitesmoke 3px;
+  background: blueviolet;
+  border-radius: 25px;
+  width: 700px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "1 2 3" "4 5 6";
+  justify-items: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+.card__container__gallery__product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card__container__gallery__product img {
+  min-width: 120px;
+  max-width: 160px;
+  margin: 10px;
+  border: solid 2px clr-azulo;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+/* ------------------------------------------------ Card Home ------------------------------------------------------------- */
+.containerContent {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cardHome {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 8px solid #203239;
+}
+.cardHome img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* ------------------------------------------------ Main Paginas Secuandarias ------------------------------------------------------------- */
+.tarjetas__conenedor {
+  background-color: #203239;
+  color: var(--clr-ceniza);
+}
+
+.tarjetas__title {
+  background-color: orangered;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tarjeta1 {
+  background-color: orange;
+}
+.tarjeta1__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-body img {
+  width: 100%;
+}
+
+.modal-header h4 {
+  text-align: center;
+}
+
+/* ------------------------------------------------ Pagina Quienes Somos ---------------------------------------------------------- */
+.QuienesSomos {
+  background-color: whitesmoke;
+}
+.QuienesSomos p {
+  color: #777;
+}
+
+/* ----------------------------------------------- Formulario de Contactos ------------------------------------------- */
+.section {
+  background-color: #203239;
+  padding-bottom: 4rem;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  border-top: #203239 4px solid;
+}
+
+.titulo-formulario {
+  font-size: 2rem;
+  color: orange;
+  padding: auto;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px 15px 0px;
+  flex-wrap: wrap;
+}
+.formulario_input {
+  padding: 5px;
+  margin: 15px 0px 15px 0px;
+  width: 75vw;
+  max-width: 597px;
+  border: 5px solid whitesmoke;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.formulario_input_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.formulario_input > input {
+  max-width: 577px;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+}
+.formulario_input > input:hover {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+.formulario_input > select {
+  border-radius: 8px;
+  text-align: center;
+}
+.formulario_input > label {
+  text-align: center;
+  margin-bottom: 3px;
+}
+.formulario_input > p {
+  text-align: center;
+}
+.formulario_input :active {
+  background-color: blueviolet;
+  color: whitesmoke;
+}
+
+/* ------------------------------------------------- Mapa ------------------------------------------------------------- */
+.contact {
+  color: whitesmoke;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_div h3 {
+  margin: 5px;
+  padding: 5px;
+}
+.contact .contact_map {
+  width: 95vw;
+  margin: 5px;
+}
+
+/* ------------------------------------------------ Footer ---------------------------------------------------------- */
+.footer {
+  background-color: #203239;
+  border-top: solid 2px orange;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__titulo {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+.footer__sec-1 h3 {
+  text-align: center;
+}
+.footer__sec-1__div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__sec-1__div ul li {
+  margin-right: 30px;
+  padding: 10px;
+}
+.footer__sec-2 {
+  text-align: center;
+  align-self: flex-start;
+}
+.footer__sec-3 li {
+  padding: 3px;
+}
+.footer__sec-3 li a:hover {
+  color: orange;
+}
+.footer__pie {
+  border: solid 2px whitesmoke;
+  width: 100%;
+  text-align: center;
+}
+.footer__pie p {
+  padding-top: 10px;
+}
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  text-decoration: none;
+}
+.footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* ------------------------------------ Media Querie 420px ----------------------------------------------------------- */
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+@media screen and (max-width: 444px) {
+  .encabezado {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-item :hover {
+    width: 130px;
+  }
+  .button-responsive {
+    display: block;
+  }
+  .buscador {
+    justify-content: space-evenly;
+  }
+  .buscador-1 {
+    margin-left: 1px;
+    width: 48vw;
+  }
+  .buscador-icon img {
+    width: 40px;
+  }
+  .card__container {
+    padding-top: 151px;
+  }
+  .card__container__titulo {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  .card__container__texto {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .card__container__gallery {
+    height: 1100px;
+    width: 297px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "1" "2" "3" "4" "5" "6";
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+/* ------------------------------------------------- Paginas Secundaria ---------------------------------------------------- */
+@media screen and (max-width: 444px) {
+  .tarjetas__conenedor {
+    padding-top: 151px;
+  }
+  .QuienesSomos {
+    padding-top: 151px;
+  }
+}
+/* ------------------------------------------------- Mapa, Contactos y Footer ---------------------------------------------------- */
+@media screen and (max-width: 444px) {
+  .secform {
+    padding-top: 151px;
+  }
+  .contact_div h3 {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .contact_map_div {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .formulario_input {
+    min-width: 252px;
+    width: 75vw;
+  }
+  .formulario_input_buttons {
+    max-width: 180px;
+  }
+  .formulario_input > input {
+    min-width: 232px;
+  }
+  .footer__titulo {
+    width: 100%;
+  }
+  .footer__sec-1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .footer__sec-2 {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .footer__sec-3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .footer__sec-3 ul {
+    text-align: start;
+    padding-left: 40%;
+  }
+  .footer__pie {
+    width: 100%;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+}
+/* ------------------------------------------------- Mapa, Contactos y Footer ---------------------------------------------------- */
+@media screen and (max-width: 444px) {
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+}
+/*------------------------------------ Media Querie hasta 768px ----------------------------------------------------------- */
+/* ------------------------------------ Main y Header ----------------------------------------------------------------------- */
+@media screen and (min-width: 444px) and (max-width: 768px) {
+  .encabezado {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-item :hover {
+    width: 130px;
+  }
+  .button-responsive {
+    display: block;
+  }
+  .buscador {
+    justify-content: space-evenly;
+  }
+  .buscador input {
+    margin-left: 1px;
+  }
+  .buscador-icon img {
+    width: 40px;
+  }
+  .header-Titulo-Imagen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card__container {
+    padding-top: 151px;
+    margin-top: 10px;
+  }
+  .card__container__titulo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  .card__container__texto {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .card__container__gallery {
+    height: 700px;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "1 2" "3 4" "5 6";
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+  }
+}
+/* ------------------------------------------------- Paginas Secundaria ---------------------------------------------------- */
+@media screen and (min-width: 444px) and (max-width: 768px) {
+  .col-11 {
+    width: 100%;
+  }
+  .tarjetas__conenedor {
+    padding-top: 151px;
+  }
+  .QuienesSomos {
+    padding-top: 151px;
+  }
+}
+/*------------------------------------ Media Querie hasta 768px ----------------------------------------------------------- */
+@media screen and (min-width: 444px) and (max-width: 768px) {
+  /* ------------------------------------ Contactos ----------------------------------------------------------------------- */
+  .secform {
+    padding-top: 151px;
+  }
+  .formulario_input {
+    min-width: 334px;
+    width: 75vw;
+  }
+  .formulario_input > input {
+    min-width: 314px;
+  }
+  /* ------------------------------------ Mapa ----------------------------------------------------------------------- */
+  .contact {
+    border: solid var(--clr-font) 3px;
+  }
+  .contact_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .contact_map_div {
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+  }
+  /* ------------------------------------ Footer ----------------------------------------------------------------------- */
+  .footer__sec-1 {
+    width: 25%;
+    align-self: flex-start;
+  }
+  .footer__sec-1 ul {
+    flex-direction: column;
+  }
+  .footer__sec-2 {
+    width: 40%;
+    text-align: center;
+  }
+  .footer__sec-3 {
+    width: 25%;
+    align-self: flex-start;
+    text-align: start;
+  }
+  .footer__sec-3 h3 {
+    text-align: start;
+    padding-left: 10%;
+  }
+  .footer .footer__pie {
+    font-size: 1rem;
+  }
+  .footer h3 {
+    font-size: 1.2rem;
+  }
+}
+/* --------------------------------- Pagina Quienes Somos ----------------------------------------------------------- */
+.imagenqs {
+  display: flex;
+  justify-content: center;
+}
+.imagenqs img {
+  height: auto;
+}
+
+/* ------------------------------------------------- Mapa, Contactos y Footer ---------------------------------------------------- */
+@media screen and (min-width: 444px) and (max-width: 768px) {
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+}
+/*------------------------------------ Media Querie hasta 1690px ----------------------------------------------------------- */
+/* ----------------------------------- Header ----------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .buscador-1 {
+    margin-left: 50px;
+  }
+  .navbar .navbar-nav {
+    margin-left: 150px;
+  }
+}
+/*------------------------------------ Media Querie hasta 1690px ----------------------------------------------------------- */
+/* ----------------------------------- Header ----------------------------------------------------------------------------- */
+@media screen and (min-width: 1201px) and (max-width: 1690px) {
+  .buscador-1 {
+    margin-left: 140px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

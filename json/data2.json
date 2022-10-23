@@ -1,0 +1,8 @@
+[
+    {"id": 7, "brand": "TREK", "model": "MADONE SLR", "year": 2019, "price": 2.000, "img": "./assets/images/Bici/Trek-Bicicleta-Ruta-720-1.jpg", "img2": "./assets/images/Bici/Trek-Bicicleta-Ruta-720-2.jpg", "img3": "./assets/images/Bici/Trek-Bicicleta-Ruta-720-3.jpg", "stock": 6},
+    {"id": 8, "brand": "MARIN", "model": "DSX 1", "year": 2023, "price": 1.500, "img": "./assets/images/Bici/Marin-Bicicleta-Ruta-720-1.jpg", "img2": "./assets/images/Bici/Marin-Bicicleta-Ruta-720-2.jpg", "img3": "./assets/images/Bici/Marin-Bicicleta-Ruta-720-3.jpg", "stock": 20},
+    {"id": 9, "brand": "SPECIALIZED", "model": "TARMAC", "year": 2022, "price": 1.800, "img": "./assets/images/Bici/Specialized-Bicicleta-Ruta-720-1.jpg", "img2": "./assets/images/Bici/Specialized-Bicicleta-Ruta-720-2.jpg", "img3": "./assets/images/Bici/Specialized-Bicicleta-Ruta-720-3.jpg", "stock": 12},
+    {"id": 10, "brand": "SCOTT", "model": "ADDICT", "year": 2020, "price": 2.500, "img": "./assets/images/Bici/Scott-Bicicleta-Ruta-720-1.jpg", "img2": "./assets/images/Bici/Scott-Bicicleta-Ruta-720-2.jpg", "img3": "./assets/images/Bici/Scott-Bicicleta-Ruta-720-3.jpg", "stock": 12},
+    {"id": 11, "brand": "KONNA", "model": "REMOTE", "year": 2021, "price": 1.300, "img": "./assets/images/Bici/Kona-Bicicleta-Ruta-720-1.jpg", "img2": "./assets/images/Bici/Kona-Bicicleta-Ruta-720-2.jpg", "img3": "./assets/images/Bici/Kona-Bicicleta-Ruta-720-3.jpg", "stock": 12},
+    {"id": 12, "brand": "SANTA CRUZ", "model": "HECKLEKER", "year": 2020, "price": 2.400, "img": "./assets/images/Bici/SantaCruz-Bicicleta-Ruta-720-1.jpg", "img2": "./assets/images/Bici/SantaCruz-Bicicleta-Ruta-720-2.jpg", "img3": "./assets/images/Bici/SantaCruz-Bicicleta-Ruta-720-3.jpg", "stock": 12}
+]

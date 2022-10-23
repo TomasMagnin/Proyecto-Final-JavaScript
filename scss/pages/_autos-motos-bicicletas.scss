@@ -1,0 +1,59 @@
+/* ------------------------------------------------ Card Home ------------------------------------------------------------- */
+
+.containerContent {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cardHome {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 8px solid $clr-azulo;
+
+    img{
+      height: auto;
+      width: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+}
+
+/* ------------------------------------------------ Main Paginas Secuandarias ------------------------------------------------------------- */
+
+.tarjetas__conenedor {
+    background-color: $clr-azulo;
+    color: var(--clr-ceniza);
+  }
+  .tarjetas__title {
+    background-color: $clr-oranred;
+    border-radius: 10px;
+    text-align: center;
+  }
+.tarjeta1 {
+    background-color: $clr-naranja;
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  }
+
+.modal-body {
+  img {
+    width: 100%;
+  }
+}
+.modal-header {
+  h4{
+    text-align: center;
+  }
+}  
+
+
+
+
+
+
+
+

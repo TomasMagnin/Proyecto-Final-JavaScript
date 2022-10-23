@@ -1,0 +1,170 @@
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+header{
+    background: $clr-ceniza;
+    color:  $clr-azulo;
+    h1  {
+      font-size: 1.5rem;
+      margin-bottom: 0rem;
+      margin-left: 5px;
+    }
+  }
+
+.button-responsive{
+ display: none;
+}
+
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+/* -------------------------------------------- Buscador y Cart--------------------------------------------------------------*/
+
+.buscador {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    &-1 {
+        width: 55vw;
+        height: 40px;
+        background-color: $clr-ceniza;
+        border-radius: 5px;
+        border:  $clr-negro 3px solid;
+        margin-left: 240px;
+        text-align: center;
+      }
+
+      &-2 {
+            width: 50px;
+            height: 40px;
+            padding: 2px;
+            margin-bottom: 4px;
+            color: $clr-ceniza;
+            background-color:  $clr-ceniza;
+            border:  $clr-negro 3px solid;
+            border-radius: 5px;
+           
+            & :hover {
+                background-color: $clr-naranja;
+                transform: scale(1.05);
+                transition: all .3s;   
+               }
+            }
+        &-img img {
+            border-radius: 10px;
+            width: 40px;
+            margin: 0px 4px 4px 4px;
+            
+        }     
+}
+
+      /* &-icon{
+        img {
+            width: 50px;
+            height: 40px;
+            padding: 2px;
+            margin-bottom: 4px;
+            color: $clr-ceniza;
+            background-color:  $clr-ceniza;
+            border:  $clr-negro 3px solid;
+            border-radius: 5px;
+           }
+        & :hover {
+            background-color: $clr-naranja;
+            transform: scale(1.05);
+            transition: all .3s;   
+           } 
+      } */
+    /* &-img img {
+      border-radius: 10px;
+      width: 40px;
+      margin: 0px 4px 4px 4px;
+      
+    }    
+
+  }
+ */
+/* input .buscador-icon-input {
+  img {
+    width: 50px;
+    height: 40px;
+    padding: 2px;
+    margin-bottom: 4px;
+    color: $clr-ceniza;
+    background-color:  $clr-ceniza;
+    border:  $clr-negro 3px solid;
+    border-radius: 5px;
+   }
+  & :hover {
+      background-color: $clr-naranja;
+      transform: scale(1.05);
+      transition: all .3s;   
+   } 
+}
+&-img img {
+border-radius: 10px;
+width: 40px;
+margin: 0px 4px 4px 4px; */
+
+
+
+.myCart {
+    padding-top: 2px;
+    margin-top: 30px;
+    margin-left: 5px;
+  &_img {
+    color: $clr-negro;
+    width: 40px;
+  }
+  &_number  {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: $clr-negro;
+  }
+}
+
+
+
+/* -------------------------------------------- Fin Buscador ----------------------------------------------------------*/
+/* -------------------------------------------- Navbar ----------------------------------------------------------------*/
+.navbar {
+    /* padding de la Nav Serch */
+    --bs-navbar-padding-x: 5px;
+    --bs-navbar-padding-y: 0rem;
+    /* Color de Font Nav */
+    --bs-navbar-color: #203239;
+    /* Hover nav color */
+    --bs-navbar-hover-color: whitesmoke;
+    /* Boton Home  */
+    --bs-navbar-active-color: whitesmoke;
+    /* Subtit Categoria */
+    --bs-navbar-brand-font-size: 1.5rem;
+    --bs-navbar-brand-color: whitesmoke;
+    --bs-navbar-brand-hover-color: whitesmoke;
+    --bs-navbar-nav-link-padding-x: 1rem;
+    /* Toggler */
+    --bs-navbar-toggler-padding-y: 0.60rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 0.7rem; 
+    --bs-navbar-toggler-border-color: whitesmoke; 
+    --bs-navbar-toggler-border-radius: 0.4rem;
+    --bs-navbar-toggler-focus-width: 0.1rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+
+  }
+  .nav-item :hover {
+    background: $clr-naranja;
+    font-weight: 400; 
+    transition: all .3s; 
+    border-radius: 5px; 
+  }
+  .navbar-toggler {
+    border: solid  2px;
+    font-size: 1.15rem;
+    &-icon {
+      background-image: url(../../assets/icon/descarga.svg);
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.05rem;
+    }
+  }
+ 
+/* ---------------------------------------- Fin Navbar ----------------------------------------------------------------*/

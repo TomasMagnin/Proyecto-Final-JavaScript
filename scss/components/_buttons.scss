@@ -1,0 +1,82 @@
+.boton{
+    background-color: $clr-ceniza;
+    color: $clr-ceniza;
+    font-weight: 700;
+    &:hover{
+        
+        background-color: $clr-naranja;
+        transition: all .2s;
+        
+    }
+}
+.botonHome{
+    @extend .boton;
+    width:100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: solid 2px $clr-azulo;
+    text-decoration: none;
+    background-color:  $clr-ceniza;
+    color: $clr-azulo;
+    border-radius: 5px;
+    &:hover {
+        background-color: $clr-naranja;
+        color: $clr-negro;
+        transition: all .2s;    
+    }    
+}
+.botonPages{
+    @extend .boton;
+    width:110px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px $clr-ceniza;
+    text-decoration: none;
+    background-color:  $clr-ceniza;
+    color: $clr-azulo;
+    border-radius: 5px;
+    &:hover {
+        background-color: $clr-oranred;
+        color: $clr-ceniza;
+        transition: all .2s;   
+    }    
+}
+
+.botonPagesH{
+    @extend .boton;
+    width:110px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px $clr-ceniza;
+    text-decoration: none;
+    background-color:  $clr-oranred;
+    color: $clr-azulo;
+    border-radius: 5px;
+    &:hover {
+        background-color: rgba(255, 68, 0, 0.879);
+        color: $clr-ceniza;
+        transition: all .2s;   
+    }    
+}
+
+
+.botonContactos{
+    @extend .boton;
+    width:110px;
+    padding: 6px 10px;
+    margin: 5px 5px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px $clr-ceniza;
+    text-decoration: none;
+    background-color: $clr-ceniza;
+    color: $clr-azulo;
+    border-radius: 5px;
+    &:hover {
+            background-color: $clr-oranred;
+            color: $clr-ceniza;
+            transition: all .2s;   
+    }    
+}    

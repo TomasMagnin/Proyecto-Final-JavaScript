@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La mejor forma de cuidar tu cuerpo relizando ejercicios con nuestras bicicletas al mejnor precio">
+    <meta name="keywords" content="Bicicletas, cuotas fijas, todos los rodados, todas las marcas.">
+    <meta name="title" content="Las mejores bicicletas de Córdoba al mejor precio, encontralas en Market Online">
+    <meta name="author" content="Tomaás Magnin">
+    <link rel="icon" href="./assets/icon/Market_Online.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bicicletas en Market Online</title>
+</head>
+<body>
+<!-- Inicio de Header -->
+<header class="encabezado">
+    <div class="buscador">
+        <div class="d-flex justify-content-start align-items-center">    
+            <div class="buscador-img ">
+                <img src="./assets/images/Market_Online.png" alt="Logo de Pagina">
+            </div>
+            <div class="header-h1 navbar-expand-md">
+                <h1 class="collapse navbar-collapse letralogo">Market Online</h1>
+            </div>
+        </div>
+        <form class="d-flex flex-nowrap"  id="form1">
+            <input type="text"  class="buscador-1" placeholder="Buscar">
+            <!-- <a  type="submit" class="buscador-icon" href="#">
+                <input type="image" class="buscador-icon-input" src="./assets/icon/magnifying-glass-solid.svg" >
+            </a> --> 
+            <input type="image" class="buscador-2" src="./assets/icon/magnifying-glass-solid.svg" >
+
+        </form>
+        <div class="navbar button-responsive">
+            <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+        </div>  
+        <a class="myCart" id="carrito"  data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart myCart_img" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg><p class="myCart_number" id="contadorCarrito">0</p>
+          </a>
+          <div class="modal fade " id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="Container-carrit"></div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>  
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md nv">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/QuienesSomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Contactos.html">Contactos</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+</header>
+<!-- Inicio de Main -->
+<main class="tarjetas__conenedor">
+    <div id="carouselExampleControls-1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/images/Bici/Found_1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>LA NUEVA FOIL RC</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/Bici/Found_2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>SAL A RODAR SIN IMPORTAR EL CLIMA</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/Bici/Found_3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>A MEDIDA DE LOS DESPLAZAMIENTOS URBANOS</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/Bici/Found_4.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>CONOCE LOS MEJORES PAISAJES EN TU BICI</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-1" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-left-square carousel-prev-icon" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082z"/>
+              </svg>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-1" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-right-square carousel-next-icon" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M5.795 12.456A.5.5 0 0 1 5.5 12V4a.5.5 0 0 1 .832-.374l4.5 4a.5.5 0 0 1 0 .748l-4.5 4a.5.5 0 0 1-.537.082z"/>
+              </svg>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <section>
+        <div class="container containerContent">
+            <div class="row">
+                <div class="cardHome col-11 col-sm-11 col-md-6" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="cardHome_media">
+                        <a href=""><img src="./assets/images/Bici/Section-Full-Suspension 700.jpg" alt="Imagen-de-Bicicleta-Full-Suspencion"></a>
+                    </div>
+                    <div class="cardHome_content">
+                        <h3>FULL SUSPENSION</h3>
+                        <button class="botonPagesH" id="btn1">Ver Más</button>
+                    </div>
+                </div>
+                <div class="cardHome col-11 col-sm-11 col-md-6" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="cardHome_media">
+                        <a href=""><img src="./assets/images/Bici/Section-Mountain 2 700.jpg" alt="Imagen-de-Bicicleta-Mountain"></a>
+                    </div>
+                    <div class="cardHome_content">
+                        <h3>MOUNTAIN</h3>
+                        <button class="botonPagesH" id="btn2">Ver Más</button>
+                    </div>
+                </div>
+                <div class="cardHome col-11 col-sm-11 col-md-6" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="cardHome_media">
+                        <a href=""><img src="./assets/images/Bici/Section-Route 700.jpg" alt="Imagen-de-Bicicleta-Route"></a>
+                    </div>
+                    <div class="cardHome_content">
+                        <h3>ROUTE</h3>
+                        <button class="botonPagesH" id="btn3">Ver Más</button>
+                    </div>
+                </div>
+                <div class="cardHome col-11 col-sm-11 col-md-6" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="cardHome_media">
+                        <a href=""><img src="./assets/images/Bici/Section-Ebike-700.jpg" alt="Imagen-de-Bicicleta-Electrica"></a>
+                    </div>
+                    <div class="cardHome_content">
+                        <h3>EBIKE</h3>
+                        <button class="botonPagesH" id="btn4">Ver Más</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <div class="container-fluid" id="listA">
+         <div class="row d-flex justify-content-center tarjetas" id="ListProdcuts"  >
+            
+        </div>
+        <!-- <button id="btn5">Limpiar</button> -->
+    </div>
+    <div id="filter">
+
+    </div>
+    
+
+    <!-- <div class="container-fluid">
+        <div class="row d-flex justify-content-center tarjetas">
+            <h2 class="tarjetas__title  text-center m-3 letraTitulo1">Bicicletas Mountain Bike</h2>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Trek-Bicicleta-MTB-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" id="Slash" alt="Imagen-de-Bicicleta-Trek">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Trek Slash 9.9</h3>
+                    <p class="card-text">Año: 2022</p>
+                    <p class="card-text">Precio: u$s 2.000</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-1">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-1" tabindex="-1" aria-labelledby="modal-label-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-1">Trek Slash 9.9</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-MTB-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-MTB-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-MTB-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Marin-Bicicleta-MTB-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicletas-Marin">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Marin Rift Zone</h3>
+                    <p class="card-text">Año: 2023</p>
+                    <p class="card-text">Precio: u$s 1.000</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-2">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-2" tabindex="-1" aria-labelledby="modal-label-2" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-2">Marin Rift Zone</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-MTB-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Marin">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-MTB-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Marin">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-MTB-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Marin">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Specialized-Bicicleta-MTB-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicletas-Specialized">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Specialized Epic</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 1.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-3">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-3" tabindex="-1" aria-labelledby="modal-label-3" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-3">Specialized Epic</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-MTB-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Specialized">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-MTB-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Specialized">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-MTB-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Specialized">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Scott-Bicicleta-MTB-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicletas-Scott">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Scott Genius</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-4">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-4" tabindex="-1" aria-labelledby="modal-label-4" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-4">Scott Genius</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-4" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-MTB-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Scott">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-MTB-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Scott">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-MTB-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicletas-Scott">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Kona-Bicicleta-MTB-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" id="Process" alt="Imagen-de-Bicicleta-Konna">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Konna Process X</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-17">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-17" tabindex="-1" aria-labelledby="modal-label-5" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-5">Konna Process X</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-17" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-MTB-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-MTB-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-MTB-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-17" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-17" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/SantaCruz-Bicicleta-MTB-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Santa Cruz Heckler</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-18">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-18" tabindex="-1" aria-labelledby="modal-label-6" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-6">Santa Cruz Heckler</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-18" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/SantaCruz-Bicicleta-MTB-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/SantaCruz-Bicicleta-MTB-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/SantaCruz-Bicicleta-MTB-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-18" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-18" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center tarjetas">
+            <h2 class="tarjetas__title  text-center m-3 letraTitulo1">Bicicletas de Ruta</h2>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Trek-Bicicleta-Ruta-720-1.jpg" class="card-img-top img-fluid tarjeta1__img"  alt="Imagen-de-Bicicleta-Trek">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Trek Madone SLR</h3>
+                    <p class="card-text">Año: 2022</p>
+                    <p class="card-text">Precio: u$s 2.000</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-5">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-5" tabindex="-1" aria-labelledby="modal-label-7" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-7">Trek Madone SLR</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-5" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-Ruta-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-Ruta-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-Ruta-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Marin-Bicicleta-Ruta-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" id="DSX" alt="Imagen-de-Bicicleta-Marin">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Marin DSX 1</h3>
+                    <p class="card-text">Año: 2023</p>
+                    <p class="card-text">Precio: u$s 1.000</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-6">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-6" tabindex="-1" aria-labelledby="modal-label-8" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-8">Marin DSX 1</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-6" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-Ruta-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Marin">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-Ruta-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Marin">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-Ruta-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Marin">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Specialized-Bicicleta-Ruta-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicleta-Specialized">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Specialized Tarmac</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 1.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-7">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-7" tabindex="-1" aria-labelledby="modal-label-9" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-9">Specialized Tarmac</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-7" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-Ruta-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Specialized">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-Ruta-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Specialized">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-Ruta-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Specialized">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-7" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-7" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Scott-Bicicleta-Ruta-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" id="Addict" alt="Imagen-de-Bicicleta-Scott">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Scott Addict</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-8">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-8" tabindex="-1" aria-labelledby="modal-label-10" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-10">Scott Addict</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-8" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-Ruta-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Scott">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-Ruta-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Scott">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-Ruta-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Scott">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-8" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-8" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Kona-Bicicleta-Ruta-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicleta-Konna">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Konna Remote</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-15">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-15" tabindex="-1" aria-labelledby="modal-label-11" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-11">Konna Remote</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-15" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Ruta-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Ruta-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Ruta-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-15" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-15" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/SantaCruz-Bicicleta-Ruta-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Santa Cruz Heckler</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-16">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-16" tabindex="-1" aria-labelledby="modal-label-12" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-12">Santa Cruz Heckler</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-16" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/SantaCruz-Bicicleta-Ruta-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/SantaCruz-Bicicleta-Ruta-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/SantaCruz-Bicicleta-Ruta-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-16" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-16" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center tarjetas">
+            <h2 class="tarjetas__title  text-center m-3 letraTitulo1">Bicicletas Electricas</h2>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Trek-Bicicleta-Electrica-720-1.jpg" class="card-img-top img-fluid tarjeta1__img"  alt="Imagen-de-Bicicleta-Trek">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Trek Powerfly FS</h3>
+                    <p class="card-text">Año: 2022</p>
+                    <p class="card-text">Precio: u$s 2.000</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-9">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-8" tabindex="-1" aria-labelledby="modal-label-13" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-13">Trek Powerfly FS</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-9" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-Electrica-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-Electrica-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Trek-Bicicleta-Electrica-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Trek">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-9" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-9" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Marin-Bicicleta-Electrica-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicleta-Marin">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Marin SAUSALITO E1</h3>
+                    <p class="card-text">Año: 2023</p>
+                    <p class="card-text">Precio: u$s 1.000</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-10">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-10" tabindex="-1" aria-labelledby="modal-label-14" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-14">Marin SAUSALITO E1</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-10" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-Electrica-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Marin">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-Electrica-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Marin">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Marin-Bicicleta-Electrica-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Marin">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-10" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-10" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Specialized-Bicicleta-Electrica-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" id="Turbo" alt="Imagen-de-Bicicleta-Specialized">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2">Specialized Turbo Levo</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 1.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-11">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-11" tabindex="-1" aria-labelledby="modal-label-15" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-15">Specialized Turbo Levo</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-11" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-Electrica-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Specialized">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-Electrica-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Specialized">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Specialized-Bicicleta-Electrica-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Specialized">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-11" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-11" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Scott-Bicicleta-Electrica-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicleta-Scott">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Scott Addict</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-12">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-12" tabindex="-1" aria-labelledby="modal-label-16" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-16">Scott Addict</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-12" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-Electrica-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Scott">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-Electrica-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Scott">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Scott-Bicicleta-Electrica-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Scott">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-12" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-12" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" alt="Imagen-de-Bicicleta-Konna">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Konna Libre CR</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-13">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-13" tabindex="-1" aria-labelledby="modal-label-17" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-17">Konna Libre CR</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-13" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Konna">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-13" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-13" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-2 tarjeta1" style="width: 24rem;">
+                <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-1.jpg" class="card-img-top img-fluid tarjeta1__img" id="Stigmata" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                <div class="card-body">
+                    <h3 class="card-title letraTexto2"> Santa Cruz Stigmata</h3>
+                    <p class="card-text">Año: 2020</p>
+                    <p class="card-text">Precio: u$s 2.500</p>
+                    <button class="botonPages"><a href="#"></a>Comprar</button>
+                    <button type="button" class="botonPages" data-bs-toggle="modal" data-bs-target="#modal-img-14">Ver Galeria</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-img-14" tabindex="-1" aria-labelledby="modal-label-18" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-label-18">Santa Cruz Stigmata</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="modal-body">
+                            <div id="carouselExampleControls-14" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-1.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-2.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/Bici/Kona-Bicicleta-Electrica-720-3.jpg" class="d-block w-100" alt="Imagen-de-Bicicleta-Santa-Cruz">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-14" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-14" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</main>
+<!-- Inicio del Footer o Pie de Página -->
+<footer class="footer">
+    <div class="footer__titulo letraTitulo1">
+        <h3>MARKET ONLINE</h3>
+    </div>
+    <div class="footer__sec-1">
+        <h3 class="letraTexto2">Redes </h3>
+        <div class="footer__sec-1__div">
+            <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram botonInstagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook botonFacebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter botonTwitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__sec-2">
+        <h3 class="letraTexto2">Quienes Somos</h3>
+        <div>
+            <p>Una empresa lider en ventas, con mas de 50 años en el rubro.</p>
+            <p>La empresa de tecnología líder en comercio Vehículos.</p>
+        </div>
+    </div>
+    <div class="footer__sec-3">
+        <h3 class="letraTexto2">Mi Cuenta</h3>
+        <div>
+            <ul>
+                <li><a href="#">Ingresar</a> </li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Registrarse</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__pie letraTexto2">
+        <p>Copyright 2022 Market Online - Todos los Derechos Reservados</p>
+    </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

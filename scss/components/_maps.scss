@@ -1,0 +1,30 @@
+$redes: (
+    Instagram: $clr-oranred,
+    Facebook: rgba(50, 79, 240, 0.644),
+    Twitter: lightblue,
+);
+
+.botonInstagram {
+    & :hover{
+        color: map-get($redes, Instagram);
+        transition: 0.8ms;
+    }
+}
+
+.botonFacebook {
+    & :hover {
+        color: map-get($redes, Facebook);
+        transition: 0.8ms;
+    }
+}
+
+.botonTwitter {
+    & :hover {
+        color: map-get($map: $redes, $key: Twitter);
+        transition: 0.8ms;
+    }
+        
+}
+
+
+

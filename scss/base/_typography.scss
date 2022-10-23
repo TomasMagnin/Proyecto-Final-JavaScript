@@ -1,0 +1,31 @@
+@mixin fontSize($size, $weight, $family){
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+}
+
+.letraTitulo3REM{
+    @include fontSize(3rem, 700, 'Roboto')
+}
+
+.letraTitulo2{
+    @include fontSize(2rem, 700, 'Roboto')
+}
+
+.letraSubTitulo2REM{
+    @include fontSize(2rem, 400, 'Roboto')
+}
+
+.letraTexto1{
+    @include fontSize(1rem, 100, Verdana)
+}
+.letraTexto2{
+    @include fontSize(1.3rem, 300, Verdana)
+}
+.letraTitulo1{
+    @include fontSize(2rem, 400, Verdana)
+}
+
+.letralogo{
+    @include fontSize(1.4rem, 600, 'Roboto')
+}

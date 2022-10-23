@@ -1,0 +1,19 @@
+/* ------------------------------------------------- Mapa ------------------------------------------------------------- */
+.contact {
+    color: $clr-ceniza;
+    background-color: $clr-violetae;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_div {
+        h3 {
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+  .contact_map {
+    width: 95vw;
+    margin: 5px;
+  }
+}

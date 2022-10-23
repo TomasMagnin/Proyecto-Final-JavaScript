@@ -1,0 +1,324 @@
+
+
+/* ------------------------------------ Media Querie 420px ----------------------------------------------------------- */
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+@media screen and (max-width: 444px) {
+    .encabezado {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }   
+    .nav-item :hover {
+            width: 130px;  
+    }     
+    .button-responsive{
+        display: block;
+    }
+    .buscador {
+        justify-content: space-evenly;
+        &-1 {
+            margin-left: 1px;
+            width: 48vw;
+        }
+        &-icon{
+            img {
+                width: 40px;
+            }
+        }
+    } 
+    
+    
+
+    .card__container {  
+        padding-top: 151px;
+        &__titulo {
+            font-size: 2rem;
+            font-weight: 900;
+            text-align: center;
+        }
+        &__texto {
+            text-align: center;
+            font-size: .9rem;
+        }
+        &__gallery {
+            height: 1100px;
+            width: 297px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: "1" "2" "3" "4" "5" "6";
+            justify-items: center;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+}   
+
+/* ------------------------------------------------- Paginas Secundaria ---------------------------------------------------- */
+@media screen and (max-width: 444px) {
+    .tarjetas__conenedor {
+        padding-top: 151px;    
+    }
+    .QuienesSomos {
+        padding-top: 151px;
+    }
+} 
+/* ------------------------------------------------- Mapa, Contactos y Footer ---------------------------------------------------- */
+  @media screen and (max-width: 444px) {
+    .secform {
+        padding-top: 151px;
+    }
+    .contact{
+        &_div {
+            h3{
+                font-size: 1rem;
+                font-weight: 900;
+            }
+        }
+        &_map_div{      
+            width: 95%;
+            display: flex;
+            justify-content: center;          
+        }
+    }
+    .formulario {
+        &_input {
+            min-width: 252px;
+            width: 75vw;
+            &_buttons {
+                max-width: 180px;
+            }    
+            & > input {
+                min-width: 232px;   
+            }                        
+        }
+    }    
+    .footer{
+        &__titulo {
+            width: 100%;
+        }
+        &__sec-1 {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 15px;  
+        }
+        &__sec-2 {
+            width: 100%;
+            padding-bottom: 15px;
+        }
+        &__sec-3 {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 15px;
+            ul{
+                text-align: start;
+                padding-left: 40%;
+            }
+        }
+        &__pie {
+            width: 100%;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+/* ------------------------------------------------- Mapa, Contactos y Footer ---------------------------------------------------- */
+@media screen and (max-width: 444px){
+    .carousel-control-next{
+        display: none;
+    }
+    .carousel-control-prev{
+        display: none;
+    }
+}
+
+
+/*------------------------------------ Media Querie hasta 768px ----------------------------------------------------------- */
+/* ------------------------------------ Main y Header ----------------------------------------------------------------------- */
+  @media screen and (min-width: 444px) and (max-width: 768px) {
+    .encabezado {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-item :hover {
+        width: 130px;  
+    }     
+    .button-responsive{
+        display: block;
+    }
+    .buscador {
+        justify-content: space-evenly;
+        input {
+            margin-left: 1px;
+        }
+        &-icon{
+            img {
+                width: 40px;
+            }
+        }
+    }   
+    .header-Titulo-Imagen {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .card__container {
+        padding-top: 151px;
+        margin-top: 10px;
+        &__titulo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-align: center;
+        }
+        &__texto {
+            text-align: center;
+            font-size: 1rem;
+        }  
+        &__gallery{
+            height: 700px;
+            max-width: 400px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "1 2" "3 4" "5 6";
+            justify-items: center;
+            align-items: center;
+            margin: 10px;
+            padding: 5px; 
+        }   
+    }
+  }
+/* ------------------------------------------------- Paginas Secundaria ---------------------------------------------------- */
+@media screen and (min-width: 444px) and (max-width: 768px) {
+   
+    .col-11 {
+        
+        width: 100%;
+    }
+   
+    .tarjetas__conenedor {
+        padding-top: 151px;    
+    } 
+    .QuienesSomos {
+        padding-top: 151px;
+    }
+} 
+/*------------------------------------ Media Querie hasta 768px ----------------------------------------------------------- */
+@media screen and (min-width: 444px) and (max-width: 768px) {
+/* ------------------------------------ Contactos ----------------------------------------------------------------------- */
+    .secform {
+        padding-top: 151px;
+    }
+    .formulario {
+        &_input {
+            min-width: 334px;
+            width: 75vw;
+            & > input {
+                min-width: 314px;   
+            }                        
+        }
+    }    
+/* ------------------------------------ Mapa ----------------------------------------------------------------------- */
+    .contact{
+        border: solid var(--clr-font) 3px;
+        &_title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }   
+        &_map_div{      
+            width: 75vw;
+            display: flex;
+            justify-content: center;          
+        }
+    }
+/* ------------------------------------ Footer ----------------------------------------------------------------------- */
+    .footer {
+        &__sec-1 {
+            width: 25%;
+            align-self: flex-start;
+            ul{    
+                flex-direction: column;   
+            }
+        }
+        &__sec-2 {
+            width: 40%;
+            text-align: center;
+        }
+        &__sec-3 {
+            width: 25%;
+            align-self: flex-start;
+            text-align: start;
+            h3 {
+                text-align: start;
+                padding-left: 10%;
+            }    
+        }
+        .footer__pie {
+            font-size: 1rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }  
+    }
+}
+/* --------------------------------- Pagina Quienes Somos ----------------------------------------------------------- */
+.imagenqs {
+    display: flex;
+    justify-content: center;
+    img {
+        height: auto;
+    }
+} 
+
+
+
+/* ------------------------------------------------- Mapa, Contactos y Footer ---------------------------------------------------- */
+@media screen and (min-width: 444px) and (max-width: 768px){
+    .carousel-control-next{
+        display: none;
+    }
+    .carousel-control-prev{
+        display: none;
+    }
+}
+
+
+/*------------------------------------ Media Querie hasta 1690px ----------------------------------------------------------- */
+/* ----------------------------------- Header ----------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .buscador {
+        &-1 {
+            margin-left: 50px;
+        }
+    }
+    .navbar .navbar-nav {
+        margin-left: 150px
+    }
+}
+/*------------------------------------ Media Querie hasta 1690px ----------------------------------------------------------- */
+/* ----------------------------------- Header ----------------------------------------------------------------------------- */
+@media screen and (min-width: 1201px) and (max-width: 1690px) {
+    .buscador {
+        &-1 {
+            margin-left: 140px;
+        }
+    }
+} 

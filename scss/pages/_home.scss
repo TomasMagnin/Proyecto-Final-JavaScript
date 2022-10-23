@@ -1,0 +1,55 @@
+/* ------------------------------------------------ Main Index ------------------------------------------------------------- */
+
+.card__main {
+    background-color: $clr-violetae;
+    border: black solid 3px;
+    background-color: $clr-azulo;
+}
+.card__container {
+        color: $clr-ceniza;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > h2{
+            margin-top: 20px;
+        }
+        &__titulo {
+            padding: 5px;
+        }
+        &__texto {
+            padding: 5px;
+            text-align: center;
+        } 
+        &__gallery {
+            border: solid $clr-ceniza 3px;
+            background: $clr-violetae;
+            border-radius: 25px;
+            width: 700px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "1 2 3" "4 5 6";
+            justify-items: center;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            &__product {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap; 
+                img {
+                    min-width: 120px;
+                    max-width: 160px;
+                    margin: 10px;
+                    border: solid 2px clr-azulo;
+                    border-radius: 8px;
+                    background-size: cover;
+                }
+                 
+            }       
+        }    
+}

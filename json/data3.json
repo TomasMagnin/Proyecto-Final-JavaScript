@@ -1,0 +1,8 @@
+[
+    {"id": 13, "brand": "TREK", "model": "POWER FLY", "year": 2019, "price": 2.000, "img": "../assets/images/Bici/Trek-Bicicleta-Electrica-720-1.jpg", "stock": 6},
+    {"id": 14, "brand": "MARIN", "model": "SAUSALITO E1", "year": 2020, "price": 1.500, "img": "../assets/images/Bici/Marin-Bicicleta-Electrica-720-1.jpg", "stock": 20},
+    {"id": 15, "brand": "SPECIALIZED", "model": "TARMAC", "year": 2022, "price": 1.800, "img": "../assets/images/Bici/Specialized-Bicicleta-Electrica-720-1.jpg", "stock": 12},
+    {"id": 16, "brand": "SCOTT", "model": "ADDICT", "year": 2020, "price": 2.500, "img": "../assets/images/Bici/Scott-Bicicleta-Electrica-720-1.jpg", "stock": 12},
+    {"id": 17, "brand": "KONNA", "model": "LIBRE CR", "year": 2021, "price": 1.300, "img": "../assets/images/Bici/Kona-Bicicleta-Electrica-720-1.jpg", "stock": 12},
+    {"id": 18, "brand": "SANTA CRUZ", "model": "STIGMATA", "year": 2020, "price": 2.400, "img": "../assets/images/Bici/SantaCruz-Bicicleta-Electrica-720-1.jpg", "stock": 12}
+]
