@@ -264,7 +264,6 @@ btnVaciar.addEventListener("click", () => {                                     
 
 /* ---------- Sesion de Usuario / Session Storage ---------- */
 
-let usx = document.getElementById("formNav");
 let usuario;                                                                        // Creamos la variable usuario
 let usuarioStorage = sessionStorage.getItem("usuario");                             // Traemos del sessionStorage el contenido de la variable
 
