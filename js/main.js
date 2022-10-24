@@ -185,16 +185,11 @@ formulario2.addEventListener("submit", async (e) => {                           
         });   
 });   
 
-/* ---------- Carrito de compras---------- */
+/* ---------- Busqueda del Producto para luego añadir al Carrito de compras---------- */
 
-let buscar3 = async () => {                                                         // Creamos la funcion listado, para recorrer el array y llamarla mas adelante. Colocamos async para convertirla en asyncrona a la funcion y asi poder usar el await y poder capturar la peticion de un archivo JSON.
-    const resp = await fetch ("./json/data1.json")                                  // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea. 
-    const data = await resp.json();                                                 // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
-    return data
-}
 
 const addCarrito = async item3 => {                                                 // Creamos la funcion para agregar items al carrito.
-    let datas2 = await buscar3();                                                   // Añadimos a la variable datas2 el contenido del documento JSON, que lo traemos con la funcion fetch.
+    let datas2 = await buscar2();                                                   // Añadimos a la variable datas2 el contenido de los documentos JSON, que lo traemos con la funcion buscar2.
     const itemID = datas2.find((item2) => item2.id === item3)                       // Utilizando el metodo find, para que nos devuelva el primer elemento que coincide con el array.
     carrito.push(itemID);                                                           // Introducimos con el metodo PUSH el resultado de la funcion find, al array de nuestro carrito.
     carritoUpload();
@@ -248,19 +243,23 @@ const btnVaciar = document.getElementById("vaciar-carrito");                    
 btnVaciar.addEventListener("click", () => {                                         // Ahora agremos un evento al boton.
     carrito.length = 0;                                                             // Le decimos que su longitud en el array es igual a 0,
     carritoUpload();                                                                // Actualizamos el carrito.
-})
+});
 
 /* ---------- Local Storage del Carrito ---------- */
 
  document.addEventListener(`DOMContentLoaded`, () => {                              // Llamamos al evento cuando se carga el documento.
-    if(localStorage.getItem(`carrito`)){                                            // Si en el local Sorage se encuentra el objeto carrito.    
-        carrito = JSON.parse(localStorage.getItem(`carrito`))                       // Entonces parseamos esa info, la convertimos a JS y la
+    if(localStorage.getItem(`carrito`)){                                             
+        carrito = JSON.parse(localStorage.getItem(`carrito`))                       
         carritoUpload()
     }
      
- localStorage.getItem(`carrito`) ? carrito = JSON.parse(localStorage.getItem(`carrito`)) : [];
+ localStorage.getItem(`carrito`) ? carrito = JSON.parse(localStorage.getItem(`carrito`)) : [];     // Si en el local Sorage se encuentra el objeto carrito. Entonces parseamos esa info, la convertimos a JS y la sino vaciamos el array.
     carritoUpload()
 }) 
+
+
+
+
 
 /* ---------- Sesion de Usuario / Session Storage ---------- */
 
