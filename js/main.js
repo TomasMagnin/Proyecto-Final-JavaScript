@@ -14,11 +14,6 @@ const prelistadoa = async () => {                                               
     const data = await resp.json();                                             // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
     listados(data)
 } 
-const prelistadob = async () => {                                               // Colocamos async para convertirla en asyncrona a la funcion y asi poder usar el await y poder capturar la peticion de un archivo JSON.
-    const resp = await fetch ("./json/data1.json")                              // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea.
-    const data = await resp.json();                                             // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
-    listados(data)
-}
 const prelistadoc = async () => {                                               // Colocamos async para convertirla en asyncrona a la funcion y asi poder usar el await y poder capturar la peticion de un archivo JSON.
     const resp = await fetch ("./json/data2.json")                              // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea.
     const data = await resp.json();                                             // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
@@ -95,7 +90,7 @@ const listados = async (data) => {                                              
 }
  
 butt1.addEventListener("click", prelistadoa);                                       // Utilizando el Evento Clic Creamos el listado de productos.
-butt2.addEventListener("click", prelistadob);                                       // Utilizando el Evento Clic Creamos el listado de productos.
+butt2.addEventListener("click", prelistadoa);                                       // Utilizando el Evento Clic Creamos el listado de productos.
 butt3.addEventListener("click", prelistadoc);                                       // Utilizando el Evento Clic Creamos el listado de productos.
 butt4.addEventListener("click", prelistadod);                                       // Utilizando el Evento Clic Creamos el listado de productos.
 
@@ -226,6 +221,7 @@ const carritoUpload = () => {                                                   
 const deleteCarrito = (item) => {                                                   // Creamos una funcion para eliminar productos del carrito de compras.                         
     const indice = carrito.indexOf(item);                                           // El parametro item de la funcion recive el N° de ID del boton del elemento que se desea borrar, paraluego usar el metodo splice y borrrarlo. 
     carrito.splice(indice, 1)                                                       
+    localStorage.setItem(`carrito`, JSON.stringify(carrito));
     carritoUpload();
     Swal.fire({                                                                     // Usamos la libreria SweetAlert para mostrar un mensaje personalizado.
         position: 'top-end',
