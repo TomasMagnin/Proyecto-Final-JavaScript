@@ -279,23 +279,7 @@ btnVaciar.addEventListener("click", () => {                                     
 
 /* ---------- Sesion de Usuario / Session Storage ---------- */
 
-/* let usx = document.getElementById("formNav");
-let usuario;                                                                        // Creamos la variable usuario
-let usuarioStorage = sessionStorage.getItem("usuario");                             // Traemos del sessionStorage el contenido de la variable "usuario".
-
-
-let newUser = () => {
-    usuario = prompt("Ingrese su nombre");                                          // Ingresamos por consola el nombre y se le asigna a la variable usuario.
-    sessionStorage.setItem("usuario", usuario);                                     // Guardamos en sessionStorage el contenido de la variable usuario.
-    alert("Bienvenido es tu primera Vez");                                          // Imprimismo el contenido.                        
-};
-
-alert(`Bienvenido ${usuarioStorage}`) || newUser(); */                              // Si la variable "usuarioStorage" tiene contenido, Entoces sale el cartel de saludo. Sino, llamamos a la funcion newUser, para crear el nuevo usuario y almacenarlo en el sescion storage.
-
-
-
-
-/* let usx = document.getElementById("formNav");
+let usx = document.getElementById("formNav");
 let usuario;                                                                        // Creamos la variable usuario
 let usuarioStorage = sessionStorage.getItem("usuario");                             // Traemos del sessionStorage el contenido de la variable
 
@@ -306,4 +290,5 @@ if(usuarioStorage){                                                             
     usuario = prompt("Ingrese su nombre");                                          // Ingresamos por consola el nombre y se le asigna a la variable usuario.
     sessionStorage.setItem("usuario", usuario);                                     // Guardamos en sessionStorage el contenido de la variable usuario.
     alert("Bienvenido es tu primera Vez");                                          // Imprimismo el contenido.
-} */
+}
+
