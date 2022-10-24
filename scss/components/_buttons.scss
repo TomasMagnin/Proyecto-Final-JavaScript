@@ -80,3 +80,22 @@
             transition: all .2s;   
     }    
 }    
+
+
+.botonPages2{
+    @extend .boton;
+    width: 300px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    border: solid 2px $clr-ceniza;
+    text-decoration: none;
+    background-color:  $clr-ceniza;
+    color: $clr-azulo;
+    border-radius: 5px;
+    &:hover {
+        background-color: $clr-oranred;
+        color: $clr-ceniza;
+        transition: all .2s;   
+    }    
+}

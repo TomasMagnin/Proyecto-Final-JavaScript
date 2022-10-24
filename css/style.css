@@ -54,12 +54,12 @@
 }
 
 /* ------------------------------------ Aplicamos Variables ----------------------------- */
-.boton, .botonContactos, .botonPagesH, .botonPages, .botonHome {
+.boton, .botonPages2, .botonContactos, .botonPagesH, .botonPages, .botonHome {
   background-color: whitesmoke;
   color: whitesmoke;
   font-weight: 700;
 }
-.boton:hover, .botonContactos:hover, .botonPagesH:hover, .botonPages:hover, .botonHome:hover {
+.boton:hover, .botonPages2:hover, .botonContactos:hover, .botonPagesH:hover, .botonPages:hover, .botonHome:hover {
   background-color: orange;
   transition: all 0.2s;
 }
@@ -127,6 +127,23 @@
   border-radius: 5px;
 }
 .botonContactos:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonPages2 {
+  width: 300px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonPages2:hover {
   background-color: orangered;
   color: whitesmoke;
   transition: all 0.2s;
@@ -406,6 +423,12 @@ header h1 {
 }
 
 .modal-header h4 {
+  text-align: center;
+}
+
+.botonLimpiar {
+  padding: 3px;
+  margin: 5px;
   text-align: center;
 }
 
