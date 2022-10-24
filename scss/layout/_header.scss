@@ -56,56 +56,6 @@ header{
         }     
 }
 
-      /* &-icon{
-        img {
-            width: 50px;
-            height: 40px;
-            padding: 2px;
-            margin-bottom: 4px;
-            color: $clr-ceniza;
-            background-color:  $clr-ceniza;
-            border:  $clr-negro 3px solid;
-            border-radius: 5px;
-           }
-        & :hover {
-            background-color: $clr-naranja;
-            transform: scale(1.05);
-            transition: all .3s;   
-           } 
-      } */
-    /* &-img img {
-      border-radius: 10px;
-      width: 40px;
-      margin: 0px 4px 4px 4px;
-      
-    }    
-
-  }
- */
-/* input .buscador-icon-input {
-  img {
-    width: 50px;
-    height: 40px;
-    padding: 2px;
-    margin-bottom: 4px;
-    color: $clr-ceniza;
-    background-color:  $clr-ceniza;
-    border:  $clr-negro 3px solid;
-    border-radius: 5px;
-   }
-  & :hover {
-      background-color: $clr-naranja;
-      transform: scale(1.05);
-      transition: all .3s;   
-   } 
-}
-&-img img {
-border-radius: 10px;
-width: 40px;
-margin: 0px 4px 4px 4px; */
-
-
-
 .myCart {
     padding-top: 2px;
     margin-top: 30px;
@@ -121,7 +71,28 @@ margin: 0px 4px 4px 4px; */
   }
 }
 
+.productInCart {
+    border-left: 5px solid orangered;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    &_delete {
+      color: red;
+      background-color: $clr-ceniza;
+      border: solid 1px transparent;
+      padding-bottom: 25px;
+      & :hover {
+        transform: scale(1.05);
+      }
+    }
+  }
 
+  .modalCarrit {
+    background-color: $clr-ceniza;
+    color: $clr-azulo;
+  }
 
 /* -------------------------------------------- Fin Buscador ----------------------------------------------------------*/
 /* -------------------------------------------- Navbar ----------------------------------------------------------------*/

@@ -29,3 +29,7 @@
 .letralogo{
     @include fontSize(1.4rem, 600, 'Roboto')
 }
+
+.letramodal{
+    @include fontSize(1.2rem, 600, 'Roboto')
+}

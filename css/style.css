@@ -47,6 +47,12 @@
   font-family: "Roboto";
 }
 
+.letramodal {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
 /* ------------------------------------ Aplicamos Variables ----------------------------- */
 .boton, .botonContactos, .botonPagesH, .botonPages, .botonHome {
   background-color: whitesmoke;
@@ -131,10 +137,15 @@
   color: whitesmoke;
 }
 
-.btn-close {
-  background-color: whitesmoke;
-  background-image: url(../../assets/icon/Close.png);
-  size: 20px;
+.precioProducto {
+  text-align: center;
+}
+
+.boton-agregar {
+  background-color: rgba(255, 68, 0, 0.937);
+}
+.boton-agregar:hover {
+  background-color: rgba(131, 28, 28, 0.4823529412);
 }
 
 .carousel-next-icon {
@@ -213,53 +224,6 @@ header h1 {
   margin: 0px 4px 4px 4px;
 }
 
-/* &-icon{
-  img {
-      width: 50px;
-      height: 40px;
-      padding: 2px;
-      margin-bottom: 4px;
-      color: $clr-ceniza;
-      background-color:  $clr-ceniza;
-      border:  $clr-negro 3px solid;
-      border-radius: 5px;
-     }
-  & :hover {
-      background-color: $clr-naranja;
-      transform: scale(1.05);
-      transition: all .3s;   
-     } 
-} */
-/* &-img img {
-     border-radius: 10px;
-     width: 40px;
-     margin: 0px 4px 4px 4px;
-
-   }    
-
- }
-*/
-/* input .buscador-icon-input {
-  img {
-    width: 50px;
-    height: 40px;
-    padding: 2px;
-    margin-bottom: 4px;
-    color: $clr-ceniza;
-    background-color:  $clr-ceniza;
-    border:  $clr-negro 3px solid;
-    border-radius: 5px;
-   }
-  & :hover {
-      background-color: $clr-naranja;
-      transform: scale(1.05);
-      transition: all .3s;   
-   } 
-}
-&-img img {
-border-radius: 10px;
-width: 40px;
-margin: 0px 4px 4px 4px; */
 .myCart {
   padding-top: 2px;
   margin-top: 30px;
@@ -273,6 +237,28 @@ margin: 0px 4px 4px 4px; */
   text-decoration: none;
   font-size: 1.25rem;
   color: black;
+}
+
+.productInCart {
+  border-left: 5px solid orangered;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.productInCart_delete {
+  color: red;
+  background-color: whitesmoke;
+  border: solid 1px transparent;
+  padding-bottom: 25px;
+}
+.productInCart_delete :hover {
+  transform: scale(1.05);
+}
+
+.modalCarrit {
+  background-color: whitesmoke;
+  color: #203239;
 }
 
 /* -------------------------------------------- Fin Buscador ----------------------------------------------------------*/

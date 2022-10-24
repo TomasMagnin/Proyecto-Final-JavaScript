@@ -12,36 +12,7 @@ class Products{
         this.stock = info.stock;
         this.sold = false;
     }
-    vender(){
-        this.stock = this.stock - 1;
-        this.sold = true;
-    }
-
-    showCars(){
-        return `Brand: ${this.brand} - Modelo: ${this.model} - Año ${this.year} - $ ${this.price} - Stock ${this.stock} `
-    }
 } 
-
-// Pusheamos al Array cars, los objetos a partir de la clase constructor.
-
-/* let cars = [];
-
-cars.push(new Products({id: 1, brand: "AUDI", model: "A4", year: 2015, price: 25000, img: "./assets/images/Autos/Audi-A4-720-1.jpg", stock: 4,}));
-cars.push(new Products({id: 2, brand: "BMW", model: "M4", year: 2012, price: 55000, img: "./assets/images/Autos/BMW-M4-720-1.jpg", stock: 2,}));
-cars.push(new Products({id: 3, brand: "HONDA", model: "CIVIC", year: 2014, price: 65000, img: "../assets/images/Autos/Honda-Civic-720-1.jpg", stock: 8,}));
-cars.push(new Products({id: 4, brand: "NISSAN", model: "GT-R", year: 2020, price: 13000, img: "../assets/images/Autos/Nissan-GTR-720-1.jpg", stock: 20,}));
-cars.push(new Products({id: 5, brand: "MERCEDES BENZ", model: "GTS", year: 2016, price: 15000, img: "../assets/images/Autos/Mercedez-Benz-GTS-720-1.jpg", stock: 10,}));
-cars.push(new Products({id: 6, brand: "FORD", model: "F-150", year: 2015, price: 10000, img: "../assets/images/Autos/Ford-Raptor-720-1.jpg", stock: 15}));
-cars.push(new Products({id: 7, brand: "CHEVROLET", model: "SILVERADO", year: 2010, price: 35000, img: "../assets/images/Autos/Chevrolet-Silverado-720-1.jpg", stock: 6}));
-cars.push(new Products({id: 8, brand: "TOYOTA", model: "SUPRA", year: 2019, price: 45000, img: "../assets/images/Autos/Toyota-Supra-720-1.jpg", stock: 20}));
-cars.push(new Products({id: 9, brand: "DODGE", model: "RAM", year: 2022, price: 30000, img: "../assets/images/Autos/Dodge-RAM-720-1.jpg", stock: 12})); */
-
-
-
-
-/* --------------------------       En esta opcion de Listar producto utilizo el Metodo FETCH y ASYNC AWAIT, FALTA AGREGAR AL RESTO */
-
-
 
 /* ---------- Creamos la funcion y evento para listar los productos---------- */      
 
@@ -53,17 +24,16 @@ let butt2 = document.getElementById("btn2");                                    
 let butt3 = document.getElementById("btn3");                                    // Traemos el nodo que tiene el atributo btn1.
 let butt4 = document.getElementById("btn4");                                    // Traemos el nodo que tiene el atributo btn1.
 
-/* let butt2 = document.getElementById("btn2");   */                                  // Traemos el nodo que tiene el atributo btn1.
+/* let butt2 = document.getElementById("btn2");   */                            // Traemos el nodo que tiene el atributo btn1.
 
 
 const listado = async () => {                                                   // Creamos la funcion listado, para recorrer el array y llamarla mas adelante. Colocamos async para convertirla en asyncrona a la funcion y asi poder usar el await y poder capturar la peticion de un archivo JSON.
-
-    const resp = await fetch ("./json/data1.json")                              // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea
+    const resp = await fetch ("./json/data1.json")                              // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea.
     const data = await resp.json();                                             // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
 
 
-    data.forEach(item => {   
-        let div = document.createElement("div"); // Creamos un div para introducir el listado de productos.
+    data.forEach(item => {                                                      // Recorremos todo el Array compuesto por objetos.       
+        let div = document.createElement("div");                                // Creamos un div para introducir el listado de productos.
         div.className = "card text-center m-2 tarjeta1";
         div.style = "width: 24rem;";
         div.innerHTML = `              
@@ -108,10 +78,10 @@ const listado = async () => {                                                   
                                         </div>
                                     </div>
                                 </div>      
-                         `;                                                     // introducimos en el HTML el listado de productos.
+                         `;                                                     // Introducimos en el HTML el listado de productos.
         contenedor.appendChild(div);                                            // Insertamos el contenido en la etiqueta div que se va creando anteriormente.
         
-        addBtn = document.getElementById(`sold${item.id}`);                    // Traemos a los objetos .ID    
+        addBtn = document.getElementById(`sold${item.id}`);                     // Traemos a los objetos .ID.    
         addBtn.addEventListener("click", () => {
             addCarrito(item.id);
         })
@@ -120,7 +90,6 @@ const listado = async () => {                                                   
     div2.innerHTML= `<button class="botonPages" id="btn5" >Limpiar Listado</button>`;
     contenedor.appendChild(div2); */
     
-
 }
  
 butt1.addEventListener("click", listado);                                       // Utilizando el Evento Clic Creamos el listado de productos.
@@ -128,65 +97,11 @@ butt2.addEventListener("click", listado);                                       
 butt3.addEventListener("click", listado);                                       // Utilizando el Evento Clic Creamos el listado de productos.
 butt4.addEventListener("click", listado);                                       // Utilizando el Evento Clic Creamos el listado de productos.
 
-/* let butt5 = document.getElementById("btn5");                                    // Traemos el nodo que tiene el atributo btn5.
+/* let butt5 = document.getElementById("btn5");                                 // Traemos el nodo que tiene el atributo btn5.
 
-butt5.addEventListener("click",() => {                                       // Utilizando el Evento Clic Borramos el listado de productos.
+butt5.addEventListener("click",() => {                                          // Utilizando el Evento Clic Borramos el listado de productos.
     contenedor.innerHTML  = "";
     }); */
-
-
-
-
-
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-
-
-
-/* let carrito = [];
-let contenedor = document.getElementById("ListProdcuts");                       // Traemos el nodo que tiene el atributo product.
-
-let butt1 = document.getElementById("btn1");                                    // Traemos el nodo que tiene el atributo btn1.
-let butt2 = document.getElementById("btn2");                                    // Traemos el nodo que tiene el atributo btn1.
-
-
-const listado = async () => {                                                   // Creamos la funcion listado, para recorrer el array y llamarla mas adelante. Colocamos async para convertirla en asyncrona a la funcion y asi poder usar el await y poder capturar la peticion de un archivo JSON.
-    const resp = await fetch ("../JSON/data1.json")                             // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea
-    const data = await resp.json();                                             // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
-    
-    
-    
-    
-    
-    data.forEach(item => {                                                      // Recorremos todo el Array compuesto por objetos.
-        let div = document.createElement("div");                                // Creamos un div para introducir el listado de productos.
-        div.innerHTML = `
-                        <div class="card" style="width: 18rem; d-flex flex-direction: row">
-                            <img src=${item.img} class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title"> Marca: ${item.brand} </h5>            
-                                <p class="card-text"> Modelo: ${item.model} </p>      
-                                <p class="card-text"> precio $${item.price} </p>
-                                <a href="#" id = "boton${item.id}" class="btn btn-primary"> Carrito </a> 
-                            </div>
-                        </div>    
-                        `;                                                      // introducimos en el HTML el listado de productos.
-        contenedor.appendChild(div);                                            // Insertamos el contenido en la etiqueta div que se va creando anteriormente.
-        addBtn = document.getElementById(`boton${item.id}`)                     // Traemos a los objetos .ID    
-        addBtn.addEventListener("click", () => {                                // Utilizando el Evento Clic se llama a la Funcion addcarrito.            
-            addCarrito(item.id)
-        })
-
-
-
-
-    })
-};
-    
-
-butt1.addEventListener("click", listado);                                       // Utilizando el Evento Clic Creamos el listado de productos.
-butt2.addEventListener("click",() => {                                          // Utilizando el Evento Clic Borramos el listado de productos.
-contenedor.innerHTML  = "";
-}); */
 
 
 /* ---------- Opcion Añadir un Producto ---------- */   
@@ -232,12 +147,11 @@ formulario1.addEventListener("submit", (e) => {                                 
 let formulario2 = document.getElementById("form1");                             // Traemos el nodo que tiene el atributo form2.
 let filters = document.getElementById("filter");                                // Traemos el nodo que tiene el atributo filter.
 
-let buscar2 = async () => { 
-    const resp = await fetch ("./json/data1.json") 
-    const data = await resp.json();
+let buscar2 = async () => {                                                     // Creamos la funcion listado, para recorrer el array y llamarla mas adelante. Colocamos async para convertirla en asyncrona a la funcion y asi poder usar el await y poder capturar la peticion de un archivo JSON.
+    const resp = await fetch ("./json/data1.json")                              // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea.
+    const data = await resp.json();                                             // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
     return data
 }
-
 
 formulario2.addEventListener("submit", async (e) => {                           // Utilizando el evento "submit" creamos una funcion para extraer los datos tal cual fueron introducidos en la pagina, la convertimos en asincronica a la funcion para poder llamar a la funcion buscar2 y asi poder poder esperar a que nos devuelva el array, sino se tranforma en asincronica al llamar la funcion y pedirle los datos el estado de la llamada seria pendiente..
     e.preventDefault();                                                         // Prevenimos que la pagina se recargue al dar click en submit.
@@ -293,97 +207,81 @@ formulario2.addEventListener("submit", async (e) => {                           
                                     </div>
                                 </div>
                             </div>     
-                        `;                                                      // introducimos en el HTML el listado del producto que filtramos.
-        filters.append(div);                                                    // Insertamos el contenido en la etiqueta div que se va creando anteriormente.
+                        `;                                                          // introducimos en el HTML el listado del producto que filtramos.
+        filters.append(div);                                                        // Insertamos el contenido en la etiqueta div que se va creando anteriormente.
         });   
 });   
 
-
 /* ---------- Carrito de compras---------- */
 
-
-let buscar3 = async () => { 
-    const resp = await fetch ("./json/data1.json") 
-    const data = await resp.json();
+let buscar3 = async () => {                                                         // Creamos la funcion listado, para recorrer el array y llamarla mas adelante. Colocamos async para convertirla en asyncrona a la funcion y asi poder usar el await y poder capturar la peticion de un archivo JSON.
+    const resp = await fetch ("./json/data1.json")                                  // Traemos la informacion de un archivo JSON, que tiene el array con nuestros productos, utilizando el metodo fetch. El await espera a que se resuelva la promesa y  luego continua con la siguiente linea. 
+    const data = await resp.json();                                                 // A la constante resp, tambien le decimos que espere con el await y  le damos formato JSON.
     return data
 }
 
-const addCarrito = async item3 => {                                                // Creamos la funcion para agregar items al carrito.
-    let datas2 = await buscar3();
-    const itemID = datas2.find((item2) => item2.id === item3)                     // Utilizando el metodo find, para quennos devuelva el primer elemento que coincide con el array.
-    carrito.push(itemID);                                                       // Introducimos con elk PUSH el resultado de la funcion find, al array de nuestro carrito.
+const addCarrito = async item3 => {                                                 // Creamos la funcion para agregar items al carrito.
+    let datas2 = await buscar3();                                                   // Añadimos a la variable datas2 el contenido del documento JSON, que lo traemos con la funcion fetch.
+    const itemID = datas2.find((item2) => item2.id === item3)                       // Utilizando el metodo find, para que nos devuelva el primer elemento que coincide con el array.
+    carrito.push(itemID);                                                           // Introducimos con el metodo PUSH el resultado de la funcion find, al array de nuestro carrito.
     carritoUpload();
 };
-
 
 /* ---------- Carrito de compras---------- */
 
+let containerCarrito = document.getElementById("Container-carrit");                 // Llamamos al nodo Container-carrit.
+const totalCarrit = document.getElementById("precioTotal");                         // Llamamos al nodo precioTotal, para luego sumar el total.
+const contCarrit = document.getElementById("contadorCarrito");                      // Llamamos al nodo contadorCarrito, para luego contar los elementos del carrito.
 
-let containerCarrito = document.getElementById("Container-carrit");
-
-const carritoUpload = () => {
-    containerCarrito.innerHTML="";                                              // Borramos lo que tenia previamente el nodo.             
-    carrito.forEach((prod) => {
+const carritoUpload = () => {                                                       // Creamos la funcion carritoUpload, recorre el array que contiene los productos que añadimos al carrito y lo recorremos con el metodo forEach para ir añadiendo al modal los items y creado el HTML dinamicamente.
+    containerCarrito.innerHTML="";                                                  // Borramos lo que tenia previamente el nodo.             
+    carrito.forEach((prod) => {                                                     // Recorremos el array con el metodo forEach, y cremos el contenido del modal con los productos.
         const div = document.createElement("div")
+        div.className = "productInCart";
         div.innerHTML = `
-                    <h5 class="card-title"> Marca: ${prod.brand} </h5>
-                    div.className = ('productoEnCarrito')           
+                    <h5 class="card-title"> Marca: ${prod.brand} </h5>           
                     <p> Modelo: ${prod.model} </p>      
                     <p> Precio $${prod.price} </p>
-                    <p> Stock $${prod.stock} </p>
-                    <button  onclick = "deleteCarrito(${prod.id})" class="boton-eliminar"><img src="./assets/icon/delete.png" alt=""></button>
+                    <button  onclick = "deleteCarrito(${prod.id})" class="productInCart_delete"><svg xmlns="http://www.w3.org/2000/svg"  class="productInCart_delete_img" width="25" height="25" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                    </svg></button>
                     `
-        containerCarrito.appendChild(div);                                       // Introducimos el contenido como hijos del div.
-        localStorage.setItem(`carrito`, JSON.stringify(carrito));
+        containerCarrito.appendChild(div);                                          // Introducimos el contenido como hijos del div.
+        localStorage.setItem(`carrito`, JSON.stringify(carrito));                   // Guardamos en el localStorage el contenido del carrito.
     })
-    contCarrit.innerHTML = carrito.length                                        // Aca contamos la longitud del array del carrito de compras, y ese nro es el indice del carrito.            
-    totalCarrit.innerText = carrito.reduce((acum, item) => acum + item.price, 0);// Por cada ciclo de for, con el metodo reduce, guardamos en el acumulador el precio y lo vamos sumando para obtener el total.
-
+    contCarrit.innerHTML = carrito.length                                           // Aca contamos la longitud del array del carrito de compras, y ese nro es el indice del carrito.            
+    totalCarrit.innerText = carrito.reduce((acum, item) => acum + item.price, 0);   // Por cada ciclo de for, con el metodo reduce, guardamos en el acumulador el precio y lo vamos sumando para obtener el total.
 };
-
 
 /* ---------- Funcion Eliminar del Carrito---------- */
 
-
-const deleteCarrito = (item) => {
-    const item2 = carrito.find((item3) => item3.id == item)
+const deleteCarrito = (item) => {                                                   // Creamos una funcion para eliminar productos del carrito de compras.
+    const item2 = carrito.find((item3) => item3.id == item)                         // Utilizando el metodo find, para que nos devuelva el primer elemento que coincide con el array que coincide con el ID del elemento seleccionado, ver que en el modal llamamos a la funcion onClick, que llama a esta funcion con el ID como variable.   
     const indice = carrito.indexOf(item);
-    carrito.splice(indice, 1)
+    carrito.splice(indice, 1)                                                       //
     carritoUpload();
-    Swal.fire({
+    Swal.fire({                                                                     // Usamos la libreria SweetAlert para mostrar un mensaje personalizado.
         position: 'top-end',
-        icon: 'success',
+        icon: 'success', 
         title: 'Producto Eliminado !',
         showConfirmButton: false,
         timer: 3000,
     });
 }
 
-
 /* ---------- Funcion Vaciar el Carrito---------- */
 
-const btnVaciar = document.getElementById("vaciar-carrito");                    // Llamamos al nodo vaciar-carrito.
-btnVaciar.addEventListener("click", () => {                                     // Ahora agremos un evento al boton.
-    carrito.length = 0;                                                         // Le decimos que su longitud en el array es igual a 0,
-    carritoUpload();                                                            // Actualizamos el carrito.
+const btnVaciar = document.getElementById("vaciar-carrito");                        // Llamamos al nodo vaciar-carrito.
+btnVaciar.addEventListener("click", () => {                                         // Ahora agremos un evento al boton.
+    carrito.length = 0;                                                             // Le decimos que su longitud en el array es igual a 0,
+    carritoUpload();                                                                // Actualizamos el carrito.
 })
-
-
-/* ---------- Contador de Carrito---------- */
-
-
-
-const contCarrit = document.getElementById("contadorCarrito");                  // Llamamos al nodo contadorCarrito, para luego contar los elementos del carrito.
-
-/* ---------- Suma del total Carrito---------- */
-
-const totalCarrit = document.getElementById("precioTotal");                     // Llamamos al nodo precioTotal, para luego sumar el total.
 
 /* ---------- Local Storage del Carrito ---------- */
 
- document.addEventListener(`DOMContentLoaded`, () => {                         // Llamamos al evento cuando se carga el documento.
-    if(localStorage.getItem(`carrito`)){                                        // Si en el local Sorage se encuentra el objeto carrito.    
-        carrito = JSON.parse(localStorage.getItem(`carrito`))                   // Entonces parseamos esa info, la convertimos a JS y la
+ document.addEventListener(`DOMContentLoaded`, () => {                              // Llamamos al evento cuando se carga el documento.
+    if(localStorage.getItem(`carrito`)){                                            // Si en el local Sorage se encuentra el objeto carrito.    
+        carrito = JSON.parse(localStorage.getItem(`carrito`))                       // Entonces parseamos esa info, la convertimos a JS y la
         carritoUpload()
     }
      
@@ -391,39 +289,35 @@ const totalCarrit = document.getElementById("precioTotal");                     
     carritoUpload()
 }) 
 
-
-
-
-
-
-
 /* ---------- Sesion de Usuario / Session Storage ---------- */
 
 /* let usx = document.getElementById("formNav");
-let usuario;                                                                    // Creamos la variable usuario
-let usuarioStorage = sessionStorage.getItem("usuario");                         // Traemos del sessionStorage el contenido de la variable "usuario".
+let usuario;                                                                        // Creamos la variable usuario
+let usuarioStorage = sessionStorage.getItem("usuario");                             // Traemos del sessionStorage el contenido de la variable "usuario".
 
 
 
 
 let newUser = () => {
-    usuario = prompt("Ingrese su nombre");                                      // Ingresamos por consola el nombre y se le asigna a la variable usuario.
-    sessionStorage.setItem("usuario", usuario);                                 // Guardamos en sessionStorage el contenido de la variable usuario.
-    alert("Bienvenido es tu primera Vez");                                      // Imprimismo el contenido.                        
+    usuario = prompt("Ingrese su nombre");                                          // Ingresamos por consola el nombre y se le asigna a la variable usuario.
+    sessionStorage.setItem("usuario", usuario);                                     // Guardamos en sessionStorage el contenido de la variable usuario.
+    alert("Bienvenido es tu primera Vez");                                          // Imprimismo el contenido.                        
 };
 
-alert(`Bienvenido ${usuarioStorage}`) || newUser(); */                             // Si la variable "usuarioStorage" tiene contenido, Entoces sale el cartel de saludo. Sino, llamamos a la funcion newUser, para crear el nuevo usuario y almacenarlo en el sescion storage.
+alert(`Bienvenido ${usuarioStorage}`) || newUser(); */                              // Si la variable "usuarioStorage" tiene contenido, Entoces sale el cartel de saludo. Sino, llamamos a la funcion newUser, para crear el nuevo usuario y almacenarlo en el sescion storage.
+
+
 
 
 /* let usx = document.getElementById("formNav");
-let usuario;                                                                    // Creamos la variable usuario
-let usuarioStorage = sessionStorage.getItem("usuario");                         // Traemos del sessionStorage el contenido de la variable
+let usuario;                                                                        // Creamos la variable usuario
+let usuarioStorage = sessionStorage.getItem("usuario");                             // Traemos del sessionStorage el contenido de la variable
 
-if(usuarioStorage){                                                             // Si la variable tiene contenido.
-    let mensaje = `Bienvenido ${usuarioStorage}`;                               // Entoces sale el cartel de saludo
+if(usuarioStorage){                                                                 // Si la variable tiene contenido.
+    let mensaje = `Bienvenido ${usuarioStorage}`;                                   // Entoces sale el cartel de saludo
     alert(mensaje);
 }else{
-    usuario = prompt("Ingrese su nombre");                                      // Ingresamos por consola el nombre y se le asigna a la variable usuario.
-    sessionStorage.setItem("usuario", usuario);                                 // Guardamos en sessionStorage el contenido de la variable usuario.
-    alert("Bienvenido es tu primera Vez");                                      // Imprimismo el contenido.
+    usuario = prompt("Ingrese su nombre");                                          // Ingresamos por consola el nombre y se le asigna a la variable usuario.
+    sessionStorage.setItem("usuario", usuario);                                     // Guardamos en sessionStorage el contenido de la variable usuario.
+    alert("Bienvenido es tu primera Vez");                                          // Imprimismo el contenido.
 } */

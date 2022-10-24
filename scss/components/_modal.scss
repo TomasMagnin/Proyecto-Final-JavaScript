@@ -3,8 +3,14 @@
      background-color: $clr-naranja;
     color: $clr-ceniza;
 }
-.btn-close{
-    background-color: $clr-ceniza;
-    background-image: url(../../assets/icon/Close.png);
-    size: 20px;
+
+.precioProducto {
+    text-align: center;
+}
+
+.boton-agregar {
+    background-color: rgba(255, 68, 0, 0.937);
+   &:hover {
+    background-color: opacify($color: #831c1c7b, $amount: 0);
+   }
 }
