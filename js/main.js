@@ -223,10 +223,9 @@ const carritoUpload = () => {                                                   
 
 /* ---------- Funcion Eliminar del Carrito---------- */
 
-const deleteCarrito = (item) => {                                                   // Creamos una funcion para eliminar productos del carrito de compras.
-    const item2 = carrito.find((item3) => item3.id == item)                         // Utilizando el metodo find, para que nos devuelva el primer elemento que coincide con el array que coincide con el ID del elemento seleccionado, ver que en el modal llamamos a la funcion onClick, que llama a esta funcion con el ID como variable.   
-    const indice = carrito.indexOf(item);
-    carrito.splice(indice, 1)                                                       //
+const deleteCarrito = (item) => {                                                   // Creamos una funcion para eliminar productos del carrito de compras.                         
+    const indice = carrito.indexOf(item);                                           // El parametro item de la funcion recive el N° de ID del boton del elemento que se desea borrar, paraluego usar el metodo splice y borrrarlo. 
+    carrito.splice(indice, 1)                                                       
     carritoUpload();
     Swal.fire({                                                                     // Usamos la libreria SweetAlert para mostrar un mensaje personalizado.
         position: 'top-end',
@@ -242,6 +241,7 @@ const deleteCarrito = (item) => {                                               
 const btnVaciar = document.getElementById("vaciar-carrito");                        // Llamamos al nodo vaciar-carrito.
 btnVaciar.addEventListener("click", () => {                                         // Ahora agremos un evento al boton.
     carrito.length = 0;                                                             // Le decimos que su longitud en el array es igual a 0,
+    localStorage.setItem(`carrito`, JSON.stringify(carrito));
     carritoUpload();                                                                // Actualizamos el carrito.
 });
 
@@ -255,10 +255,7 @@ btnVaciar.addEventListener("click", () => {                                     
      
  localStorage.getItem(`carrito`) ? carrito = JSON.parse(localStorage.getItem(`carrito`)) : [];     // Si en el local Sorage se encuentra el objeto carrito. Entonces parseamos esa info, la convertimos a JS y la sino vaciamos el array.
     carritoUpload()
-}) 
-
-
-
+}); 
 
 
 /* ---------- Sesion de Usuario / Session Storage ---------- */
