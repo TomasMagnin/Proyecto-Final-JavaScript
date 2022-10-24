@@ -244,13 +244,10 @@ btnVaciar.addEventListener("click", () => {                                     
 /* ---------- Local Storage del Carrito ---------- */
 
  document.addEventListener(`DOMContentLoaded`, () => {                              // Llamamos al evento cuando se carga el documento.
-    if(localStorage.getItem(`carrito`)){                                             
-        carrito = JSON.parse(localStorage.getItem(`carrito`))                       
-        carritoUpload()
-    }
      
  localStorage.getItem(`carrito`) ? carrito = JSON.parse(localStorage.getItem(`carrito`)) : [];     // Si en el local Sorage se encuentra el objeto carrito. Entonces parseamos esa info, la convertimos a JS y la sino vaciamos el array.
-    carritoUpload()
+ carritoUpload()
+
 }); 
 
 
@@ -261,7 +258,7 @@ let usuarioStorage = sessionStorage.getItem("usuario");                         
 
 
 
-if(usuarioStorage){                                                                 // Si la variable tiene contenido.
+if(usuarioStorage){                                                                 // Si la variable tiene contenido, entonces muestro muesta el cartel con el contenido.
     Swal.fire({
         title: `Bienvenido Usuario ${usuarioStorage} `,
       })
@@ -283,8 +280,176 @@ if(usuarioStorage){                                                             
       })
 }
 
+/* ---------- Cargar Contenido de Pagina Contactos ---------- */      
+
+                      
+const contentmain = document.getElementById("contentBody");                         // Traemos el nodo que tiene el atributo contentBody y le asignamos la variable contentmain.
+let butt5 = document.getElementById("btn5");                                        // Traemos el nodo que tiene el atributo btn5.
 
 
-    
+const LoadContact =  () => {                                                        // Creamos la funcion listado, para recorrer el array que contiene el archivo JSON y llamarla mas cuando hacemos click en el boton de sleccion de tipo de bicicleta.
+        contentmain.innerHTML  = "";                            
+        contentmain.innerHTML  = `<section class="section secform" id="secContac"></section>`
+        let contenedorContact = document.getElementById("secContac"); 
+        let article1 = document.createElement("article");                           // Creamos un article para introducir el contenido de la pagina contactos.
 
-  
+        article1.innerHTML = `              
+                                <h2 class="titulo-formulario letraTitulo1">Registrar Usuario</h2>
+                                <form  class="formulario">
+                                    <div class="formulario_input">
+                                        <label  for="Campo_Nombre"><b>Ingrese Nombre</b></label>
+                                        <input type="text" id="Campo_Nombre" value="Ej: Pedro" required>
+                                    </div>
+                                    <div class="formulario_input">
+                                        <label for="Campo_Apellido"><b>Ingrese su Apellido</b></label>
+                                        <input type="text" id="Campo_Apellido" value="EJ: Messi" required>
+                                    </div>
+                                    <div class="formulario_input">
+                                        <label for="Campo_Email"><b>Ingrese su Email</b></label>
+                                        <input type="email" id="Campo_Email" value="Nombre@email.com">
+                                    </div>
+                                    <div class="formulario_input">
+                                        <label for="Campo_Celular"><b>Ingrese Su Celular</b></label>
+                                        <input type="text" id="Campo_Celular" placeholder="Ingrese su Número de Teléfono" value="*54-9-351-5555555">
+                                    </div>
+                                    <div class="formulario_input">
+                                        <label for="Campo_Fecha_Nacimiento"><b>Ingrese su Fecha de Nacimiento</b></label>
+                                        <input type="date" id="Campo_Fecha_Nacimiento" value="1950-09-18">
+                                    </div>  
+                                    <div class="formulario_input">
+                                        <label for="text"><b>Elija su Sexo</b></label>
+                                        <select name="text" id="text">
+                                            <option value="Masculino">Masculino</option>
+                                            <option value="Femenino">Femenino</option>
+                                        </select>
+                                    </div>
+                                    <div class="formulario_input">
+                                        <p>Lea los terminos y condiciones y haga clic para aceptar</p>
+                                        <label for="Campo_Aceptar"><b>Acepto los Términos y Condiciones</b></label>
+                                        <input type="checkbox" id="Campo_Aceptar"  required  value="1">
+                                    </div>
+                                    <div class="formulario_input_buttons">
+                                        <input type="submit" class="botonContactos">
+                                        <input type="reset" class="botonContactos">
+                                    </div>                   
+                                </form>     
+                         `;                                                     // Introducimos en el HTML el contenido.
+        contenedorContact.appendChild(article1);                                // Insertamos el contenido en la etiqueta section que se creo anteriormente.
+}
+
+butt5.addEventListener("click", LoadContact);                                   // Utilizando el Evento Clic Creamos el contenido de la pagina contactos.
+
+
+/* ---------- Cargar Contenido de Pagina Contactos ---------- */      
+
+                      
+// Anterionmetne ya traemos el contenido del nodo que tiene el atributo contentBody y le asignamos la variable contentmain.
+
+let butt6 = document.getElementById("btn6");                                      // Traemos el nodo que tiene el atributo btn6.
+
+
+const LoadQs =  () => {                                                           // Creamos la funcion listado, para recorrer el array que contiene el archivo JSON y llamarla mas cuando hacemos click en el boton de sleccion de tipo de bicicleta.
+        contentmain.innerHTML  = "";                            
+        contentmain.innerHTML  = `<article class="QuienesSomos" id="secQs"></article>`
+        let contenedorQs = document.getElementById("secQs"); 
+        
+        contenedorQs.innerHTML = `              
+                                    <h2 class="titulo_articulo mb-3 pt-3 text-center letraTitulo1"> Acerca de Market Online </h2>   
+                                    <div class="card mb-3" >
+                                        <div class=" row g-0">    
+                                            <div class="col-lg-6">
+                                                <div class="card-body">    
+                                                    <h3 class="card-title text-center letraTitulo1"> SOMOS </h3>
+                                                    <p class="letraTexto1 pt-3">
+                                                        La empresa de tecnología líder en comercio Vehículos y soluciones de venta online para tiendas. Nuestro propósito es democratizar el comercio para transformar la vida de millones de personas en   la región.
+                                                    </p>
+                                                </div>
+                                            </div>    
+                                            <div class="col-lg-6  imagenqs">
+                                                <img src="./assets/images/QuienesSomos/Somos.jpg" class="img-fluid  rounded-end" alt="Imagen del Logo de la Pagina">
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="card mb-3" >
+                                        <div class=" row g-0">    
+                                            <div class="col-lg-6">
+                                                <div class="card-body">    
+                                                    <h3 class="card-title text-center letraTitulo1"> Hacemos </h3>
+                                                    <p class="letraTexto1 pt-3">
+                                                        Desarrollamos productos tecnológicos que permiten a millones de usuarios comprar, vender, anunciar, enviar y pagar a través de Internet de forma fácil, segura y eficiente.
+                                                    </p>
+                                                </div>
+                                            </div>       
+                                            <div class="col-lg-6 imagenqs">
+                                                <img src="./assets/images/QuienesSomos/Hacemos.jpg" class="img-fluid  rounded-end" alt="Imagen del Logo de la Pagina">
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="card mb-3" >
+                                        <div class=" row g-0">    
+                                            <div class="col-lg-6">
+                                                <div class="card-body">           
+                                                    <h3 class="card-title text-center letraTitulo1"> Innovamos </h3>
+                                                    <p class="letraTexto1 pt-3">
+                                                        La tecnología es la herramienta que nos permite desarrollar soluciones escalables, capaces de generar el impacto necesario para impulsar la inclusión y el desarrollo.
+                                                    </p>
+                                                </div>
+                                            </div>       
+                                            <div class="col-lg-6 imagenqs">
+                                                <img src="./assets/images/QuienesSomos/Innovamos.jpg" class="img-fluid  rounded-end" alt="Imagen del Logo de la Pagina">
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="card mb-3" >
+                                        <div class=" row g-0">    
+                                            <div class="col-lg-6">
+                                                <div class="card-body">           
+                                                    <h3 class="card-title text-center letraTitulo1"> Cuidamos </h3>
+                                                    <p class="letraTexto1 pt-3">
+                                                        La sustentabilidad es un modo de hacer totalmente integrado a nuestra estrategia de negocio. Para nosotros, generar valor económico, social y ambiental van de la mano.
+                                                    </p>
+                                                </div>
+                                            </div>       
+                                            <div class="col-lg-6 imagenqs">
+                                                <img src="./assets/images/QuienesSomos/Cuidamos.jpg" class="img-fluid  rounded-end" alt="Imagen del Logo de la Pagina">
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="card mb-3" >
+                                        <div class=" row g-0">    
+                                            <div class="col-lg-6">
+                                                <div class="card-body">           
+                                                    <h3 class="card-title text-center letraTitulo1"> Trabajamos </h3>
+                                                    <p class="letraTexto1 pt-3">
+                                                         El ADN emprendedor que nos guía promueve una cultura que prioriza la diversidad, la autonomía y la creatividad, a través de su entorno dinámico y abierta a los riesgos.
+                                                    </p>
+                                                </div>
+                                            </div>       
+                                            <div class="col-lg-6 imagenqs">
+                                                <img src="./assets/images/QuienesSomos/Trabajamos.jpg" class="img-fluid  rounded-end" alt="Imagen del Logo de la Pagina">
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="card mb-5" >
+                                        <div class=" row g-0">    
+                                            <div class="col-lg-6">
+                                                <div class="card-body">           
+                                                    <h3 class="card-title text-center letraTitulo1"> Comunicamos </h3>
+                                                    <p class="letraTexto1 pt-3">
+                                                        Somos conscientes de nuestro rol social y económico cada vez más relevante. Compartimos nuestras acciones y noticias corporativas.
+                                                    </p>
+                                                </div>
+                                            </div>       
+                                            <div class="col-lg-6 imagenqs">
+                                                <img src="./assets/images/QuienesSomos/Comunicamos.jpg" class="img-fluid  rounded-end" alt="Imagen del Logo de la Pagina">
+                                            </div>
+                                        </div>
+                                    </div>  
+                            
+                            `;                                                     // Introducimos en el HTML el contenido.
+        contenedorQs.append();                                                 // Insertamos el contenido en la etiqueta section que se creo anteriormente.
+}
+
+butt6.addEventListener("click", LoadQs); 
+
+/* --------------------------------------------------------------------------------- FIN ---------------------------------------------------------------------------------------- */
