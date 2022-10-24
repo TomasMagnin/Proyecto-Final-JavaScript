@@ -1,18 +1,3 @@
-// Creamos primero la clase constructora para crear objetos de nuestros productos y añadir
-// sus especificaiones de forma dinamica.
-
-class Products{
-    constructor(info){
-        this.id = info.id;
-        this.brand = info.brand;
-        this.model = info.model;
-        this.year = info.year;
-        this.price = info.price;
-        this.img = info.img;
-        this.stock = info.stock;
-        this.sold = false;
-    }
-} 
 
 /* ---------- Creamos la funcion y evento para listar los productos---------- */      
 
@@ -292,3 +277,35 @@ if(usuarioStorage){                                                             
     alert("Bienvenido es tu primera Vez");                                          // Imprimismo el contenido.
 }
 
+Swal.fire({
+    title: 'Ingrese su Nombre de Usuario ',
+    input: 'text',
+    inputAttributes: {
+      autocapitalize: 'off'
+    },
+    confirmButtonText: 'Look up',
+    showLoaderOnConfirm: true,
+    preConfirm: (login) => {
+      return fetch(`//api.github.com/users/${login}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(response.statusText)
+          }
+          return response.json()
+        })
+        .catch(error => {
+          Swal.showValidationMessage(
+            `Request failed: ${error}`
+          )
+        })
+    },
+    allowOutsideClick: () => !Swal.isLoading()
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: `${result.value.login}'s avatar`,
+        imageUrl: result.value.avatar_url
+      })
+    }
+  })
+  
