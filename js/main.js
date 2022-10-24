@@ -268,44 +268,32 @@ let usx = document.getElementById("formNav");
 let usuario;                                                                        // Creamos la variable usuario
 let usuarioStorage = sessionStorage.getItem("usuario");                             // Traemos del sessionStorage el contenido de la variable
 
+
+
 if(usuarioStorage){                                                                 // Si la variable tiene contenido.
-    let mensaje = `Bienvenido ${usuarioStorage}`;                                   // Entoces sale el cartel de saludo
-    alert(mensaje);
+    Swal.fire({
+        title: `Bienvenido Usuario ${usuarioStorage} `,
+      })
 }else{
-    usuario = prompt("Ingrese su nombre");                                          // Ingresamos por consola el nombre y se le asigna a la variable usuario.
-    sessionStorage.setItem("usuario", usuario);                                     // Guardamos en sessionStorage el contenido de la variable usuario.
-    alert("Bienvenido es tu primera Vez");                                          // Imprimismo el contenido.
+    Swal.fire({
+        title: 'Ingrese su Nombre de Usuario ',
+        input: 'text',
+        inputAttributes: {
+          autocapitalize: 'off'
+        },
+        confirmButtonText: 'Continuar',
+        showLoaderOnConfirm: true,
+        preConfirm: (login) => { 
+            sessionStorage.setItem("usuario", login);                               // Guardamos en sessionStorage el contenido de la variable usuario.  
+            Swal.fire({
+                title: `Bienvenido Usuario ${login} `,
+              })
+        },
+      })
 }
 
-Swal.fire({
-    title: 'Ingrese su Nombre de Usuario ',
-    input: 'text',
-    inputAttributes: {
-      autocapitalize: 'off'
-    },
-    confirmButtonText: 'Look up',
-    showLoaderOnConfirm: true,
-    preConfirm: (login) => {
-      return fetch(`//api.github.com/users/${login}`)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(response.statusText)
-          }
-          return response.json()
-        })
-        .catch(error => {
-          Swal.showValidationMessage(
-            `Request failed: ${error}`
-          )
-        })
-    },
-    allowOutsideClick: () => !Swal.isLoading()
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire({
-        title: `${result.value.login}'s avatar`,
-        imageUrl: result.value.avatar_url
-      })
-    }
-  })
+
+
+    
+
   
